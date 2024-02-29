@@ -68,7 +68,7 @@ Evita que las empresas u organizaciones lean, vendan, compartan o actúen sobre 
 ### Sistema de credenciales
 HatChat es una extensión para Chrome, su interfaz ha sido realizada usando *React JS* y *TailwindCSS* principalmente. 
 El funcionamiento es el siguiente:
-Cuando un usuario se loguea, HatChat crea un par de claves RSA , su ID y su clave pública es almacenada en el servidor. Se le solicita al usuario introducir una contraseña, cuando la introduce, se utiliza *cifrado simétrico* para cifrar su clave RSA privada y guardarla en su navegador. De esta forma ningún dato sensible.
+Cuando un usuario se loguea, HatChat crea un par de claves RSA , su ID y su clave pública es almacenada en el servidor. Se le solicita al usuario introducir una contraseña, cuando la introduce, se utiliza *cifrado simétrico* para cifrar su clave RSA privada y guardarla en su navegador. De esta forma ningún dato sensible es expuesto a ser atacado.
 Cuando inicia una sesión de HatChat cada vez que abre el navegador, HatChat le pide su contraseña, la cual usa para descifrar su clave privada almacenada y usarla en esa sesión, su contraseña solo persiste mientras no cierre el navegador, esta contraseña, al ser la base de la cadena de descifrado, no se almacena en el navegador, ni usando ninguna API de Chrome o del navegador (window), su contraseña se mantiene en el código fuente de la extensión mientras se ejecute, cuando un servicio necesita su contraseña se la pide a los scripts que la contienen.
 Los scripts que contienen la contraseña en tiempo de ejecución utilizan IIFE (Expresión de función ejecutada inmediatamente):
 ```js
