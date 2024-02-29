@@ -26,10 +26,12 @@ Evita que las empresas u organizaciones lean, vendan, compartan o actúen sobre 
 
 - Por el momento solo funciona para <https://web.whatsapp.com/>
 - Si su conversación/chat de su red social en la que utilice *HatChat* guarda algún mensaje de borrador para ser enviado, este borrador se le adjuntará al cifrado y HatChat no podrá descifrarlo.
+- El servicio de *logout* no funciona adecuadamente, si quiere iniciar sesión con otra cuenta de google, abra una sesión con esa cuenta en chrome antes de iniciar sesión en HatChat.
 ---
 ## Instrucciones
 
 1. Abra su navegador Chrome, diríjase a extensiones, active el modo desarrollador.
+   
    ![modoDesarrollador](./utils/modoDesarrollador.png)
 2. Diríjase a la esquina izquierda y arriba, presione *Cargar Descomprimida*.
    ![cargar](./utils/cargar.png)
