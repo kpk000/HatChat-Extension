@@ -1,7 +1,7 @@
 
 # HatChat 
 
-![hatchat](./utils/hatChat-logo.png)
+![hatchat](./assets/hatChat-logo.png)
 
 ---
 ## Índice 
@@ -21,6 +21,12 @@ Evita que las empresas u organizaciones lean, vendan, compartan o actúen sobre 
 
 *Haz que tus mensajes privados sean realmente privados, ¡Cifra para proteger!*.
 
+
+#### HatChat cifra los mensajes antes de enviarlos con las claves de los usuarios.
+![crypt](./assets/cryptConver.jpeg)
+#### HatChat descifra los mensajes con las claves de los usuarios
+![clearConver](./assets//clearConver.jpeg)
+
 ---
 ## Limitaciones
 
@@ -32,9 +38,9 @@ Evita que las empresas u organizaciones lean, vendan, compartan o actúen sobre 
 
 1. Abra su navegador Chrome, diríjase a extensiones, active el modo desarrollador.
    
-   ![modoDesarrollador](./utils/modoDesarrollador.png)
+   ![modoDesarrollador](./assets/modoDesarrollador.png)
 2. Diríjase a la esquina izquierda y arriba, presione *Cargar Descomprimida*.
-   ![cargar](./utils/cargar.png)
+   ![cargar](./assets/cargar.png)
 3. Seleccione la carpeta interior con nombre "*dist*" , ya debería de tener instalada la extensión.
 4. Inicie la extensión.
 5. Inicie sesión con su cuenta de *Google*.
@@ -43,7 +49,7 @@ Evita que las empresas u organizaciones lean, vendan, compartan o actúen sobre 
 
 7. En la pantalla principal hay dos componentes, el de la izquierda es para activar la extensión sobre sus pestañas, si no se activa no podrá enviar mensajes cifrados, pero **SI** descifrar mensajes. El componente de la derecha le muestra los chats que tiene almacenados y un botón para crearlos, cada chat tiene dos botones, un input para seleccionar ese chat , y un botón para eliminar.
 
-   ![interfaz](./utils/interfaz.png)
+   ![interfaz](./assets/interfaz.png)
 8. El botón cuadrado en el chat es para seleccionar el chat, al pulsar sobre el seleccionará ese chat, HatChat obtendrá las claves de cifrado y descifrado para ese chat, todos los mensajes serán cifrados para ese chat, y solo los miembros del grupo serán capaces de descifrarlos.
 
    **IMPORTANTE** : Aunque no active el cifrado con el componente izquierdo, si ha seleccionado un chat, todos los mensajes cifrados para ese chat **SI** serán descifrados y podrá leerlos. Si no selecciona ningún chat, HatChat no podrá descifrar mensajes hasta que seleccione uno.
@@ -51,13 +57,13 @@ Evita que las empresas u organizaciones lean, vendan, compartan o actúen sobre 
    Si presiona el botón rojo de abandonar, su usuario será eliminado del chat, esto no afectará a los demás usuarios, tenga en cuenta que si abandona un chat, no podrá nunca más leer los mensajes cifrados para ese chat.
    
 9. Si presiona el botón de crear chat, verá la siguiente interfaz.
-    ![crear](./utils/crearChat.png)
+    ![crear](./assets/crearChat.png)
     Para crear un chat, busque el ID del usuario que quiera que participe, cada usuario puede ver su ID pasando el ratón por su nombre de usuario o en los ajustes (esquina derecha superior).
     Este ID es público, piense que es como su número de teléfono entre sus contactos.
     Los miembros del grupo irán apareciendo en la parte inferior (flecha amarilla).
     
 10. Una vez que haya añadido al menos un usuario, le aparecerá esta interfaz.
-    ![name](./utils/name.png)    
+    ![name](./assets/name.png)    
     
 11. Introduzca el nombre del grupo y pulse *OK*, si no ha ocurrido ningún error, le debería de aparecer un modal con un mensaje de éxito.
     **IMPORTANTE**: Por el momento para no saturar la aplicación, cada usuario puede estar como máximo en 4 chats, debe asegurarse de que todos los miembros del chat tengan menos de 4 chats creados.
