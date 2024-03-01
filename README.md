@@ -21,10 +21,11 @@ Evita que las empresas u organizaciones lean, vendan, compartan o actúen sobre 
 
 *Haz que tus mensajes privados sean realmente privados, ¡Cifra para proteger!*.
 
+--- 
 
-#### HatChat cifra los mensajes antes de enviarlos con las claves de los usuarios.
+#### HatChat cifra los mensajes antes de enviarlos con las claves de los usuarios. *(Aplicación móvil de la red social)*.
 ![crypt](./assets/cryptConver.jpg)
-#### HatChat descifra los mensajes con las claves de los usuarios
+#### HatChat descifra los mensajes con las claves de los usuarios *(Versión WEB de la red social)*.
 ![clearConver](./assets//clearConver.jpeg)
 
 ---
