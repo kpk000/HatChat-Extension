@@ -23,7 +23,7 @@ Evita que las empresas u organizaciones lean, vendan, compartan o actúen sobre 
 
 
 #### HatChat cifra los mensajes antes de enviarlos con las claves de los usuarios.
-![crypt](./assets/cryptConver.jpeg)
+![crypt](./assets/cryptConver.jpg)
 #### HatChat descifra los mensajes con las claves de los usuarios
 ![clearConver](./assets//clearConver.jpeg)
 
