@@ -1,0 +1,67 @@
+{
+  "manifest_version": 3,
+  "name": "HatChat",
+  "description": "Social media private message encryption extension.",
+  "version": "1.0",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs",
+    "webRequest",
+    "declarativeNetRequest",
+    "downloads",
+    "identity",
+    "unlimitedStorage"
+ 
+  ],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "./assets/hatChat-128.png",
+      "48": "./assets/hatChat-128.png",
+
+      "128": "./assets/hatChat-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+   
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+
+      "js": ["mainContentScript.js"],
+      "css": ["mainStylesInject.css"]
+       
+
+      
+    }
+  ],
+
+  "icons": {
+    "128": "./assets/hatChat-128.png"
+  },
+  "options_page": "options.html",
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "oauth2": {
+    "client_id": "908354005346-igpq6j0jk3qffp0avsfgq4a6ud36f5vj.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/userinfo.email"
+    ]
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["wappScript.js","mainStylesInject.css","assets/hatChat-128.png","assets/send.png"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvKKlmZXQ3oPxEi2/VXqCAc12yWdiiY4VKdKCMf6KxTDI6iXT3wz4i3DD0QcF5PpKdVFsxJANJJImEaHPaqXQpd+TymcNWlw+WU/Oss9pEYHFDMy+pnKZmVbG90G0KR7cDMxSIQCrjTXwgOnQD5rEvSJzMze6o/uWolMbK+p+XhgwFpi5cu3f5TQrxzKS2oQRp956uQ25MU6dlHuEmKEJ+PDsWwhbIupmil9vdZ3PLE9wg2Z+EvORlO5ldSOLURqyAul+28QMHMfHExTCeuCRCWbbfVJZfAMkgzYMt+EUVKsjXE7jXfCIzEkrsPF1y/2vauisTDpCzv+L72M+mfI50wIDAQAB"  
+  
+}
+  
