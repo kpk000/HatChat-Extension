@@ -84,3 +84,20 @@ Si la extensión se desinstala, la clave privada y cifrada del usuario se pierde
 ### Chats y cifrado
 Cuando un usuario crea un chat, se crea una clave de sesión (en el contexto de cifrado asimétrico) para ese chat, esa clave de sesión se cifra con la clave pública de cada usuario y se almacena en el servidor.
 Cuando un usuario vuelve a usar HatChat y selecciona un chat, la extensión ya conoce su contraseña y la almacena en tiempo real, por lo que puede descifrar la clave privada y usar esta para descifrar la clave de sesión. A partir de ese punto los mensajes serán cifrados y descifrados con esa clave de sesión, esto es lo que se denomina *cifrado híbrido*, ya que combina el cifrado simétrico (con la contraseña) y el cifrado asimétrico (con las claves RSA).
+
+#### License
+HatChat privacy extension
+Copyright (C) 2024 Karim A.C.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
