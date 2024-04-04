@@ -16,7 +16,7 @@
 ## Introducción 
 
 **HatChat** es una extensión para el navegador Chrome, que permite cifrar y descifrar los **mensajes privados** de tus redes sociales favoritas.
-HatChat usa cifrado híbrido para cifrar y descifrar en tiempo de ejecución, lo que significa que no almacena contraseñas, mensajes , o cualquier tipo de información sensible.
+HatChat usa cifrado híbrido para cifrar y descifrar en tiempo de ejecución, lo que significa que no almacena contraseñas, mensajes , o cualquier tipo de información sensible (Se conoce también como cifrado amnésico, al cerrar el navegador, la contraseña que comienza la cadena de descifrado se pierde).
 Evita que las empresas u organizaciones lean, vendan, compartan o actúen sobre tus mensajes privados.
 
 *Haz que tus mensajes privados sean realmente privados, ¡Cifra para proteger!*.
@@ -85,7 +85,7 @@ Los scripts que contienen la contraseña en tiempo de ejecución utilizan IIFE (
 
 ```
 De esta forma se protege el scope de las variables a uso interno, y se evita que otros scripts externos puedan leer sus datos.
-Cuando se cierra el navegador, HatChat pierde su contraseña, por lo que cuando vuelva a usar la extensión necesitará introducir su contraseña para *rehidratar* la extensión.
+Cuando se cierra el navegador, HatChat pierde su contraseña (cifrado amnésico), por lo que cuando vuelva a usar la extensión necesitará introducir su contraseña para *rehidratar* la extensión.
 Si la extensión se desinstala, la clave privada y cifrada del usuario se pierde, por lo que HatChat necesita el archivo de backup `.json` para restablecer sus credenciales, por este motivo es importante que mantenga su archivo de backup a salvo, ya que contiene su contraseña y su clave privada.
 
 ### Chats y cifrado
