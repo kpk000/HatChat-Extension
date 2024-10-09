@@ -2,7 +2,7 @@
 # HatChat 
 
 ---
-> [!IMPORTANT]
+< [!IMPORTANT]
 ## Actualización
 Las aplicaciones web como WhatsApp Web son conscientes de la existencia de extensiones como esta, y como resultado, implementan mecanismos para manipular el DOM periódicamente. Esto incluye cambios en las clases de los elementos del DOM, lo que complica la operación de este tipo de extensiones. Debido a mi falta de tiempo para mantenerla ante cada actualización de la web, esta extensión ha quedado obsoleta y se mantendrá como una prueba de concepto (PoC). Demuestra que es posible mejorar la privacidad y la seguridad operativa (OpSec), incluso en aplicaciones vinculadas a intermediarios de datos. Si en el futuro decido volver a darle soporte, este mensaje será eliminado.
 
